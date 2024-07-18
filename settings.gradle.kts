@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "ProductsScreenRouteTask"
 include(":app")
- 
+include(":data")
+include(":domain")

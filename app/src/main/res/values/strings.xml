@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ProductsScreenRouteTask</string>
+    <string name="route_signature">route singnature</string>
+    <string name="what_do_you_search_for">what do you search for?</string>
+    <string name="search_icon">search icon</string>
+    <string name="cart_icon">cart icon</string>
 </resources>
