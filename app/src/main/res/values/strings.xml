@@ -4,4 +4,6 @@
     <string name="what_do_you_search_for">what do you search for?</string>
     <string name="search_icon">search icon</string>
     <string name="cart_icon">cart icon</string>
+    <string name="added_to_wishlist">add to wish list</string>
+    <string name="product_image">product image</string>
 </resources>

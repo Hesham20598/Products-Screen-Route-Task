@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("kapt")
 }
 
 android {
@@ -33,7 +34,18 @@ android {
 }
 
 dependencies {
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    // Gson converter
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    // Http Logging Interceptor
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 
+    // Dagger Hilt
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+    // to inject hiltViewModel
+    implementation ("androidx.hilt:hilt-navigation-compose:1.0.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

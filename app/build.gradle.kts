@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -50,6 +52,20 @@ android {
 }
 
 dependencies {
+    //Glide Compose
+    implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
+
+    implementation("androidx.compose.material:material:1.6.7")
+    implementation(project(":domain"))
+    // Constraint Layout
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    // Navigation Compose
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+    // Dagger Hilt
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+    // to inject hiltViewModel
+    implementation ("androidx.hilt:hilt-navigation-compose:1.0.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
